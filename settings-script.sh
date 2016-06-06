@@ -1,14 +1,15 @@
 #!/bin/sh
 
-SOURCE_FILE="${SRCROOT}/Pods/Target\ Support\ Files/Pods-${EXECUTABLE_NAME}/Pods-${EXECUTABLE_NAME}-acknowledgements.plist"
+SOURCE_FILE="${SRCROOT}/Pods/Target Support Files/Pods-${EXECUTABLE_NAME}/Pods-${EXECUTABLE_NAME}-acknowledgements.plist"
 TARGET_FILE="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Settings.bundle/Pods-acknowledgements.plist"
 
 #location of symbolic link creator
-LN="/bin/ln"
+CP="/bin/cp"
 
-$LN -sf "${SOURCE_FILE}" "${TARGET_FILE}"
+$CP "${SOURCE_FILE}" "${TARGET_FILE}"
 
 echo "SOURCE_FILE = ${SOURCE_FILE}"
+echo "TARGET_FILE = ${TARGET_FILE}"
 
 INFOPLISTPATH="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Info.plist"
 VERSION_LIST_PATH="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Settings.bundle/Version.plist"
