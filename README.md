@@ -1,5 +1,11 @@
 EasyAbout
 ======================
+## WARNING: As of now will not work with cocoapods version 1.0.0. Will be updated shortly.
+
+## Why you should use
+
+Well, it is always nice to give credit to the ones who helped you :smiley:
+Bonus: it helps keeping track of the app version that is installed
 
 ## Example
 
