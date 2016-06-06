@@ -1,6 +1,6 @@
 EasyAbout
 ======================
-## WARNING: As of now will not work with cocoapods version 1.0.0. Will be updated shortly.
+## Requirements: cocoapods version 1.0.0 or above.
 
 ## Why you should use
 
@@ -25,7 +25,7 @@ Bonus: it helps keeping track of the app version that is installed
 
 ## Install
 
-Add to podfile :
+Add to each wanted podfile target :
 
 ```ruby
 platform :ios
@@ -34,7 +34,7 @@ pod 'EasyAbout'
 
 ```
 
-Add a new run script: 
+Add a new run script to each target: 
 
 ```ruby
 "${SRCROOT}/Pods/EasyAbout/settings-script.sh"
