@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
     
   s.name         = "EasyAbout"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "A way to easily add Cocoapod licenses and App Version to your iOS App using the Settings Bundle"
   s.homepage     = "https://github.com/JARMourato/EasyAbout"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.preserve_paths  = 'README.md', 'settings-script.sh'
   s.source_files    = 'Placeholder.h'
   s.requires_arc    = true
-  s.resource_bundle = { 'Settings' => ['*.lproj','*.plist', '../Pods-acknowledgements.plist'] }
+  s.resource_bundle = { 'Settings' => ['*.lproj','*.plist'] }
   s.prepare_command = 'chmod u+x $(pwd)/settings-script.sh'
 
 end
