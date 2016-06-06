@@ -6,7 +6,7 @@ TARGET_FILE="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Settings.bundle/Pods-ack
 #location of symbolic link creator
 LN="/bin/ln"
 
-$LN -sf $SOURCE_FILE $TARGET_FILE
+$LN 
 
 INFOPLISTPATH="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Info.plist"
 VERSION_LIST_PATH="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Settings.bundle/Version.plist"
