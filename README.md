@@ -28,7 +28,6 @@ Bonus: it helps keeping track of the app version that is installed
 Add to each wanted podfile target :
 
 ```ruby
-platform :ios
 
 pod 'EasyAbout'
 
