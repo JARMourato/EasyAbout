@@ -1,5 +1,10 @@
 #!/bin/sh
 
+SOURCE_FILE="${SRCROOT}/Pods/Target\ Support\ Files/Pods-${EXECUTABLE_NAME}/Pods-${EXECUTABLE_NAME}-acknowledgements.plist"
+TARGET_FILE="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Settings.bundle/Pods-acknowledgements.plist"
+
+ln -sf $SOURCE_FILE TARGET_FILE
+
 INFOPLISTPATH="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Info.plist"
 VERSION_LIST_PATH="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Settings.bundle/Version.plist"
 
