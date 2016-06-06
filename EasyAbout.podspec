@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.preserve_paths  = 'README.md', 'settings-script.sh'
   s.source_files    = 'Placeholder.h'
   s.requires_arc    = true
-  s.resource_bundle = { 'Settings' => ['*.lproj','*.plist'] }
+  s.ios.resource_bundle = { 'Settings' => ['*.lproj','Root.plist','Version.plist'] }
   s.prepare_command = 'chmod u+x $(pwd)/settings-script.sh'
 
 end
