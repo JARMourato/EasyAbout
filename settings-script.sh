@@ -17,8 +17,8 @@ VERSION_LIST_PATH="${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Settings.bundle/Ve
 # Location of PlistBuddy
 PLISTBUDDY="/usr/libexec/PlistBuddy"
 
-BUILD_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $INFOPLISTPATH)
-BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $INFOPLISTPATH)
+BUILD_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${INFOPLISTPATH}")
+BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${INFOPLISTPATH}")
 # Get the current git commmit hash (first 7 characters of the SHA)
 GITREVSHA=$(git --git-dir="${PROJECT_DIR}/.git" --work-tree="${PROJECT_DIR}" rev-parse --short HEAD)
 
