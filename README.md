@@ -36,7 +36,7 @@ pod 'EasyAbout'
 Add a new run script to each target: 
 
 ```ruby
-"${SRCROOT}/Pods/EasyAbout/settings-script.sh"
+"${PODS_ROOT}/EasyAbout/settings-script.sh"
 ```
 ![](screenshots/addrunscript.png)
 
