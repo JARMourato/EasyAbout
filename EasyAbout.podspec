@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
     
   s.name         = "EasyAbout"
-  s.version      = "1.1.3"
+  s.version      = "1.1.4"
   s.summary      = "A way to easily add Cocoapod licenses and App Version to your iOS App using the Settings Bundle"
   s.homepage     = "https://github.com/JARMourato/EasyAbout"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
