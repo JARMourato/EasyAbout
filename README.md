@@ -1,6 +1,6 @@
 EasyAbout
 ======================
-## Requirements: cocoapods version 1.0.0 or above.
+## Requirements: cocoapods version 1.4.0 or above.
 
 ## Why you should use
 
