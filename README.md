@@ -30,7 +30,7 @@ Add to each wanted podfile target :
 ```ruby
 
 pod 'EasyAbout'
-
+script_phase :name => 'EasyAbout Setup', :script => '${PODS_ROOT}/EasyAbout/settings-script.sh'
 ```
 
 ## License

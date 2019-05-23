@@ -8,13 +8,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => 'https://github.com/JARMourato/EasyAbout.git', :tag => s.version.to_s }
   s.preserve_paths  = 'settings-script.sh'
-  s.source_files    = 'Placeholder.h'
-  s.ios.resource_bundle = { 'Settings' => ['*.lproj','Root.plist','Version.plist'] }
-  s.script_phases = [
-    {
-        :name => 'EasyAbout Install',
-        :script => '${PODS_ROOT}/EasyAbout/settings-script.sh',
-        :execution_position => :after_compile
-    }
-  ]
+  s.ios.source_files    = 'Placeholder.h'
+  s.ios.resource_bundle = { 'Settings' => [ '*.lproj', 'Root.plist', 'Version.plist' ] }
 end
