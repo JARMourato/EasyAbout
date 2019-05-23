@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.script_phases = [
     {
         :name => 'EasyAbout Install',
-        :script => '${PODS_TARGET_SRCROOT}/settings-script.sh',
+        :script => '${PODS_ROOT}/EasyAbout/settings-script.sh',
         :execution_position => :after_compile
     }
   ]

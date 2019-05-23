@@ -33,16 +33,6 @@ pod 'EasyAbout'
 
 ```
 
-Add a new run script to each target: 
-
-```ruby
-"${PODS_ROOT}/EasyAbout/settings-script.sh"
-```
-![](screenshots/addrunscript.png)
-
-
 ## License
 
 **EasyAbout** is available under the MIT license. See the [LICENSE](https://github.com/JARMourato/AcknowledgementsBundle/blob/master/LICENSE) file for more info.
-
-
